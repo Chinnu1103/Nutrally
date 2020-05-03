@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">#fff</item>
+        <item name="colorOnSecondary">#fff</item>
+        <item name="colorError">#FA1515</item>
+        <item name="android:textColorPrimary">@color/textColorDark</item>
+        <item name="android:textColorSecondary">@color/textColor</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="TopRoundedCardView" parent="Widget.MaterialComponents.CardView" >
+        <item name="shapeAppearanceOverlay">@style/CardViewShapeAppearanceOverlay</item>
+    </style>
+
+    <style name="CardViewShapeAppearanceOverlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/textColor</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="FilledButtonBlue" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">15dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="FilledButtonWhite" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">25dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="backgroundTint">#ffff</item>
+        <item name="iconTint">@null</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+</resources>

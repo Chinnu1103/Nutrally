@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Nutrally</string>
+    <string name="nutritionix_app_id" translatable="false">4fe2fcba</string>
+    <string name="nutritionix_app_key" translatable="false">830f3c22edbcaa8374c9d9cdc5fc3813</string>
+
+    <string-array name="meals">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Snacks</item>
+        <item>Dinner</item>
+    </string-array>
+
+    <string-array name="Metric">
+        <item>Time</item>
+        <item>Distance</item>
+    </string-array>
+
+    <string-array name="Exercises">
+        <item>Aerobics</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Boxing</item>
+        <item>Calisthenics</item>
+        <item>Cricket</item>
+        <item>Cycling</item>
+        <item>Dancing</item>
+        <item>Fencing</item>
+        <item>Football</item>
+        <item>Golf</item>
+        <item>Gymnastics</item>
+        <item>Handball</item>
+        <item>Hiking</item>
+        <item>Hockey</item>
+        <item>Ice Skating</item>
+        <item>Kayaking</item>
+        <item>Kickboxing</item>
+        <item>Martial Arts</item>
+        <item>Polo</item>
+        <item>Rock Climbing</item>
+        <item>Roller Skating</item>
+        <item>Rowing</item>
+        <item>Rugby</item>
+        <item>Running</item>
+        <item>Skateboarding</item>
+        <item>Skiing</item>
+        <item>Snowboarding</item>
+        <item>Softball</item>
+        <item>Squash</item>
+        <item>Surfing</item>
+        <item>Swimming</item>
+        <item>Table Tennis</item>
+        <item>Tennis</item>
+        <item>Volleyball</item>
+        <item>Walking</item>
+        <item>Weight Lifting</item>
+        <item>Yoga</item>
+        <item>Zumba</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_cover_image">App Cover Image</string>
+    <string name="google_sign_in">Google Sign In</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="forgot_password">Forgot Password? Click here</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or">OR</string>
+    <string name="profile">Profile</string>
+    <string name="height">Height</string>
+    <string name="cm">CM</string>
+    <string name="details">Details</string>
+    <string name="feet">Feet</string>
+    <string name="inches">Inches</string>
+    <string name="metric">Metric</string>
+    <string name="weight">Weight</string>
+    <string name="kg">KG</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthday">Birthday</string>
+    <string name="goals">Goals</string>
+    <string name="imperial">Imperial</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="daily_calories">Daily Calories</string>
+    <string name="min">Min</string>
+    <string name="daily_exercise">Daily Exercise</string>
+    <string name="sync_with_google_fit">Sync with Google Fit</string>
+    <string name="or_type_what_you_ate_here">Or type what you ate here</string>
+    <string name="add">Add</string>
+    <string name="log_meal">Log Meal</string>
+    <string name="your_food_items_will_be_displayed_here">Your food items will be displayed here</string>
+    <string name="or_type_your_exercise_here">Or type your exercise here</string>
+    <string name="long_press_to_delete">Long press to delete</string>
+    <string name="your_exercises_will_be_displayed_here">Your exercises will be displayed here</string>
+    <string name="log_exercise">Log Exercise</string>
+    <string name="set">Set</string>
+    <string name="set_your_preferences_here">Set your preferences here</string>
+    <string name="duration">Duration:</string>
+    <string name="exercise_icon">Exercise Icon</string>
+    <string name="meal_icon">Meal Icon</string>
+    <string name="cal">cal</string>
+    <string name="info_image">Info Image</string>
+    <string name="calories">Calories</string>
+    <string name="total_fat">Total Fat</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="sodium">Sodium</string>
+    <string name="carbohydrates">Carbohydrates</string>
+    <string name="protein">Protein</string>
+    <string name="profile_picture_of_user">Profile Picture of User</string>
+    <string name="dev_name">Chirangivi Bhat</string>
+
+</resources>
+

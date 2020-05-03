@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.nutrally.ui.Home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_addFragment"
+            app:enterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/addFragment" />
+        <argument
+            android:name="meal_name"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+        <argument
+            android:name="meal_values"
+            app:argType="com.example.nutrally.Food[]"
+            android:defaultValue="@null"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_nav_home_self"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_exerciseFragment"
+            app:enterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/exerciseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_stats"
+        android:name="com.example.nutrally.ui.Stats.StatsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_stats" />
+
+    <fragment
+        android:id="@+id/nav_social"
+        android:name="com.example.nutrally.ui.Social.SocialFragment"
+        android:label="Social"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_social_to_tweetFragment"
+            app:enterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:destination="@id/tweetFragment" />
+        <argument
+            android:name="user_tweet_id"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_nav_social_self"
+            app:destination="@id/nav_social" />
+        <argument
+            android:name="mine_tweets"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.nutrally.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.nutrally.ExerciseFragment"
+        android:label="fragment_exercise"
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_exerciseFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/tweetFragment"
+        android:name="com.example.nutrally.TweetFragment"
+        android:label="fragment_tweet"
+        tools:layout="@layout/fragment_tweet" >
+        <action
+            android:id="@+id/action_tweetFragment_to_nav_social"
+            app:destination="@id/nav_social" />
+    </fragment>
+</navigation>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "759649204131",
+    "firebase_url": "https://nutrally-mad-lab.firebaseio.com",
+    "project_id": "nutrally-mad-lab",
+    "storage_bucket": "nutrally-mad-lab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759649204131:android:115c8f16d3c6629906cc16",
+        "android_client_info": {
+          "package_name": "com.example.nutrally"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759649204131-3ps972vak01hkvlqesccaundg5tqd38m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nutrally",
+            "certificate_hash": "69a243f057d3bb528d77cd246fbc5c914309cfcb"
+          }
+        },
+        {
+          "client_id": "759649204131-1gp44dtpk32po9u106bb2107pn6cto10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJnlQ3OaW0vfexWUrwM08UHSYcQnZI1dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759649204131-1gp44dtpk32po9u106bb2107pn6cto10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

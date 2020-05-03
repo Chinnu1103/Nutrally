@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TweetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextInputLayout"
+            android:layout_margin="16dp"
+            app:hintEnabled="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_tweet_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:hint="Type your tweet here"
+                android:text="" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/colorPrimary"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="10dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cv_image_cross"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="top|end"
+                app:cardBackgroundColor="#000"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_image_cross"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/fab_add"
+                    android:rotation="45"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/iv_tweet_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/ll_tweet_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="32dp" >
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bt_add_image"
+                    style="@style/OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add image"
+                    android:layout_marginBottom="16dp"
+                    app:icon="@drawable/fab_add" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bt_add_chart"
+                    style="@style/OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Chart"
+                    app:icon="@drawable/fab_add" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

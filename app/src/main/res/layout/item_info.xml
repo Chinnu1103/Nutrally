@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="24dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="@string/calories" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/textColor"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="@string/total_fat" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_fat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_weight="1"
+            android:text="@string/cholesterol" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_chol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_weight="1"
+            android:text="@string/sodium" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_sod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/textColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_weight="1"
+            android:text="@string/carbohydrates" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_carbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/textColor"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_weight="1"
+            android:text="@string/protein" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/textColor"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

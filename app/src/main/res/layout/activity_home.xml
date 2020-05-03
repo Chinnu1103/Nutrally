@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/colorPrimaryVariant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="11dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingBottom="76dp"
+        app:menu_labels_colorRipple="#212121"
+        app:menu_labels_colorNormal="#212121"
+        app:menu_labels_colorPressed="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu_backgroundColor="#B2000000"
+        app:menu_colorNormal="@color/colorSecondary"
+        app:menu_colorPressed="@color/colorSecondary">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dining"
+            app:fab_colorNormal="@color/colorSecondary"
+            app:fab_colorPressed="@color/colorSecondary"
+            app:fab_label="Log Food"
+            app:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_exs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gym"
+            app:fab_colorNormal="@color/colorSecondary"
+            app:fab_colorPressed="@color/colorSecondary"
+            app:fab_label="Log Exercise"
+            app:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:elevation="9dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/tb_home"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingEnd="16dp"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        android:theme="?attr/actionBarTheme"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:titleTextColor="#fff" />-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv_fragment"
+        style="@style/TopRoundedCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        android:layout_marginTop="80dp">
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/mobile_navigation" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/design_default_color_on_primary"
+            android:layout_weight="0.2"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_left" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Today"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="@color/design_default_color_on_primary"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_profile"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_twitter_user"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/iv_tw_user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Sign in to Twitter"
+                android:textAllCaps="false"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/profile_picture_of_user"
+                android:src="@drawable/twitter" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_sign_in"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="58dp"
+                android:layout_marginEnd="16dp"
+                android:text="Sign in to Twitter"
+                android:textColor="@color/textColorDark"
+                app:fontFamily="sans-serif-medium" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:elevation="9dp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_tw_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_on_primary"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                tools:text="@string/dev_name"
+                android:gravity="bottom"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_tw_unm"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="top"
+                android:textColor="@color/design_default_color_on_primary"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                tools:text="\@ChirangiviB"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_cross"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical"
+            android:rotation="45"
+            android:src="@drawable/fab_add"/>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/sv_log"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:queryHint="Search your food here"
+            app:iconifiedByDefault="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_rounded_white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingEnd="24dp"
+            android:layout_gravity="center_vertical"
+            style="@style/FilledButtonWhite"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:icon="@drawable/tw__ic_logo_default"
+            app:iconTint="@color/tw__composer_blue"
+            android:text="Tweet"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
